@@ -1,4 +1,4 @@
-package telran.stream.tests;
+package telran.streams.test;
 
 import static org.junit.jupiter.api.Assertions.*;
 import java.util.*;
@@ -6,6 +6,7 @@ import java.util.stream.Collectors;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
+import telran.streams.*;
 
 class StreamTests {
 	private static final int N_GROUP_NUMBERS = 100;
@@ -64,6 +65,7 @@ class StreamTests {
 	}
 
 	@Test
+	@Disabled
 	void displayOccurrencesTest() {
 		String[] strings = { "lmn", "ab", "lmn", "ab", "c", "a", "lmn" };
 		// lmn -> 3
@@ -72,4 +74,12 @@ class StreamTests {
 		// c -> 1
 		displayOccurrences(strings);
 	}
+
+//	HW-27 Start--------------
+	@Test
+	void printDigitStatisticsTest() {
+		StreamTasks streamTasks = new StreamTasks();
+		streamTasks.printDigitStatistics(streamTasks.randomNumbersList);
+	}
+//	HW-27 Finish-------------
 }
