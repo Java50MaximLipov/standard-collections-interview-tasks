@@ -31,6 +31,7 @@ class MyStackTest {
 		assertEquals(2_000_000, myStack.pop());
 		assertEquals(2_000_000, myStack.pop());
 		assertThrowsExactly(NoSuchElementException.class, () -> emptyStack.pop());
+
 	}
 
 	@Test
@@ -51,6 +52,7 @@ class MyStackTest {
 		myStack.push(1_000_000);
 		assertEquals(1_000_000, myStack.getMax());
 		assertThrowsExactly(NoSuchElementException.class, () -> emptyStack.getMax());
+
 	}
 
 	@Test
@@ -59,4 +61,5 @@ class MyStackTest {
 		fillStack(reversedStack);
 		assertEquals(20, reversedStack.getMax());
 	}
+
 }

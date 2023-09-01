@@ -25,7 +25,7 @@ public class MyStack<T> {
 	}
 
 	public T pop() {
-		// Removes the stack's top element and returns it out
+		// TODO removes the stack's top element and returns it out
 		// In the case no elements exist in the stack the method throws exception
 		// NoSuchElementException
 		T element = values.removeLast();
@@ -40,7 +40,7 @@ public class MyStack<T> {
 	}
 
 	public T getMax() {
-		// Returns maximal element from the stack
+		// TODO returns maximal element from the stack
 		// In the case no elements exist in the stack the method throws exception
 		// NoSuchElementException
 		return maxValues.getLast();
