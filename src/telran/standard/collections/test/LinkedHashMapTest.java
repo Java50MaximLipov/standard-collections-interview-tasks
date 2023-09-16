@@ -1,6 +1,7 @@
-package telran.jcf;
+package telran.standard.collections.test;
 
 import static org.junit.jupiter.api.Assertions.*;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import java.util.*;
@@ -38,4 +39,5 @@ class LinkedHashMapTest {
 		Integer[] expected = { 13, 20, 10, 100 };
 		assertArrayEquals(expected, map.values().toArray(Integer[]::new));
 	}
+
 }

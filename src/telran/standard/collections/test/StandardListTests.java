@@ -1,4 +1,4 @@
-package telran.jcf;
+package telran.standard.collections.test;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
